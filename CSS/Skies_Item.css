@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Angkor&display=swap');
+
+:root {
+    --primary-color: #eb5e28; /* Define a custom color variable */
+    --secondary-color: #252422;
+    --background-color: #fffcf2;
+    --grey--color: #403d39;
+    --light-grey--color: #ccc5b9;
+    --light-orange-color:rgb(236, 138, 99);
+    --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    --shadow2: 0 4px 8px 0 rgba(246, 131, 69, 0.2), 0 6px 20px 0 rgba(248, 186, 148, 0.19);
+
+
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../font/poppins/Poppins-Regular.otf) format('otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+} 
+
+body {
+    background-color: var(--background-color);
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#wrapper{
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/*nav*/
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
+
+nav .top_bar{
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: .5em 3em;
+}
+
+nav .top_bar ul{
+    display: flex;
+    flex-direction: row;
+
+}
+
+nav .second_bar{
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f9efcef5 ;
+}
+
+nav img{
+    box-shadow: none;
+}
+
+
+/*Link bar*/
+
+.top_bar ul{
+    list-style-type: none
+}
+
+.top_bar ul li a{
+    font-size: 1em;
+    letter-spacing: 5px;
+    padding: 12px 12px;
+    border-radius: 5px;
+    margin: 0em .5em;
+    color: var(--background-color);
+    text-decoration: none;
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow2);
+
+}
+
+.top_bar ul li a:hover{
+    background-color: var(--secondary-color);
+    text-decoration: none;
+
+}
+
+
+.second_bar{
+    padding-right: 3rem;
+    list-style-type: none
+}
+
+.second_bar a{
+    font-size: 1em;
+    letter-spacing: 2px;
+    padding-right: 1.7em;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.second_bar a:hover{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+
+.search_top, .hamber_bar {
+    display: none;
+}
+
+/*Search*/
+
+.search_second {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 2px 3px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(218, 49, 49, 0.1);
+
+}
+
+.search_second input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    width: 300px;
+}
+
+.search_second button {
+    background-color:var(--secondary-color);
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.search_second button:hover {
+    background-color: #eb5e28;
+}
+
+/* Button */
+button {
+    font-size: 18px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow,transform;
+    background: radial-gradient( 100% 100% at 100% 0%, #f5a111 0%, var(--primary-color) 100% );
+    box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+    padding: 0 2em;
+    border-radius: 0.3em;
+    color: #fff;
+    height: 2.6em;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+
+  }
+  
+  button:hover {
+    box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px var(--primary-color);
+    transform: translateY(-0.1em);
+  }
+  
+  button:active {
+    box-shadow: inset 0px 0.1em 0.6em var(--primary-color);
+    transform: translateY(0em);
+  }
+
+/*main*/
+/*img*/
+img{
+    box-shadow: var(--shadow);
+    border-radius: 4px;
+
+} 
+
+.col {
+    padding: 10px;
+    box-sizing: border-box; 
+   
+}
+
+#skis_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#skis_container .col1{
+    flex: 1 1 22%;
+    border: 1px solid gray;
+    min-width: 10ch; 
+
+}
+
+#skis_container .col2{
+    flex: 1 1 78%;
+    min-width: 15ch;
+}
+
+.col2 .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8em 0 1.5em 0px;
+}
+
+.col2 .header i{
+    display: none ;
+}
+
+/* form */
+fieldset{
+	padding: 1rem;
+	border: none;
+	margin: 1.5rem 0;
+	border-radius: 5px;
+    color: var(--secondary-color);
+}
+
+legend{
+	background-color: #eb5f28;
+    color: var(--background-color);
+	padding: .5rem;
+	border-radius: 5px;
+	max-width: 75%;
+}
+
+fieldset ul li{
+    margin: 10px 0px;
+    font-size: .9em;
+}
+
+hr{
+    color: var(--light-grey--color);
+}
+
+
+/* skis */
+
+.star_icon {
+    color: #fbc895ef;
+}
+.star{
+    color: var(--primary-color);
+}
+
+.ski_price p{
+    font-family: "Angkor", serif;
+    font-size: 1.7em;
+    color: var(--primary-color);
+}
+
+.skis{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.ski_list{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: 15px;
+}
+
+.ski_list .skis_detail{
+    display: flex;
+    flex-direction: column;
+    gap: .6em;
+}
+
+.ski_list .skis_detail .ski_price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: .6em;
+}
+
+/* Button */
+
+
+.button_buy {
+    font-size: 18px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow,transform;
+    background: radial-gradient( 100% 100% at 100% 0%, #454545 0%, var(--secondary-color) 100% );
+    box-shadow: 0px 0.01em 0.01em rgba(233, 192, 42, 0.3), 0px 0.3em 0.5em -0.01em #eb5f2861, inset 0px -0.01em 0px var(--primary-color);
+    padding: 0 2em;
+    border-radius: 0.3em;
+    color: var(--background-color);
+    height: 2.6em;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 4px;
+
+  }
+  .ski_price a{
+    display: flex;
+    align-items: center;
+    
+
+  }
+  .button_buy:hover {
+    box-shadow: 0px 0.01em 0.01em rgba(231, 192, 51, 0.495), 0px 0.3em 0.5em -0.01em rgba(244, 165, 54, 0.802), inset 0px -0.01em 0px rgba(242, 153, 44, 0.928);
+    transform: translateY(-0.1em);
+  }
+  
+  .button_buy:active {
+    box-shadow: inset 0px 0.1em 0.6em var(--primary-color);
+    transform: translateY(0em);
+  }
+
+
+/*footer*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.2em 3em;
+}
+
+footer img{
+    box-shadow: none;
+}
+
+footer .footer_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.footer_icon i{
+    font-size: 2em;
+    padding: 0px 5px;
+    color: var(--primary-color);
+}
+
+
+@media screen and (max-width: 769px){
+
+    /* nav */
+    nav div:nth-child(2){
+        display: none;
+    }
+     
+    nav .top_bar{
+        padding: .5em 1em;
+    }
+
+    .logo img{
+        width: 80px;
+    }
+ 
+    nav div ul li:first-child{
+        display: none;
+    }
+ 
+    .top_bar ul li a{
+        font-size: .9em;
+        letter-spacing: 1px;
+        padding: 10px 10px;
+        border-radius: 5px;
+        margin: 0em .4em;
+    }
+
+    .hamber_bar{
+        display: inline;
+
+    }
+
+    /* main */
+    #skis_container .col1{
+        display: none;
+
+    
+    }
+    
+    .col2 .header i{
+        display: flex;
+        width: 30px;
+        height: 30px;
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+
+    }
+        
+
+    .star_icon i{
+        font-size: .8em;
+    }
+
+    .ski_price p{
+        font-size: 1.2em;
+    }
+
+    .skis{
+        gap: 20px;
+       
+    }
+
+    .ski_list{
+        max-width: 250px;
+       
+    }
+
+    .ski_list .skis_detail{
+        display: flex;
+        flex-direction: column;
+        gap: .4em;
+    }
+
+
+    /* Button */
+    .button_buy {
+        font-size: 1em;
+        height: 2em;
+    }
+    
+
+    /*footer*/
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1em 1em;
+    }
+
+    footer img{
+        width: 80px;
+    }
+
+    .footer_icon i{
+        font-size: 1.2em;
+        padding: 0px 2px;
+    }
+    .footer_container p{
+        font-size: .7em;
+    }
+
+
+
+}
