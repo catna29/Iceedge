@@ -26,6 +26,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 } 
@@ -276,14 +277,15 @@ img{
     border-radius: 4px;
 
 }
-.categories img{
-    opacity: .8;
-}
+
 
 .categories img:hover{
-    opacity: 1;
+    width: 105%;
+    transform: translateY(-0.1em);
 }
-
+.categories img:active {
+    transform: translateY(0em);
+  }
 
 /* fqa */
 

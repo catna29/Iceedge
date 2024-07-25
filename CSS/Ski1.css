@@ -322,6 +322,7 @@ span{
     display: flex;
     flex-direction: row;
     gap: 20px;
+    
 }
 
 .ski_size div{
@@ -332,23 +333,22 @@ span{
     border: 2px solid var(--secondary-color);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 2px;
-
+    justify-content: center;
+    text-align: center;
 }
 
 .quantity{
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 15px;
     align-items: center;
 }
 
 .quantity div{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 5px;
-    border: 2px solid var(--secondary-color);
+    border: 1px solid var(--secondary-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -493,7 +493,7 @@ footer .footer_container{
     
     }
     .pictures img:first-child{
-        width: 600px;
+        width: 500px;
     
     }
 
@@ -503,6 +503,25 @@ footer .footer_container{
         flex-direction: column;
         gap: 30px;
         
+    }
+
+
+    .ski1 p{
+        font-size: .9em;
+    }
+
+    .ski_color div{
+        width: 30px;
+        height: 30px;
+    }
+
+    .ski_size div{
+        width: 50px;
+        height: 30px;
+        font-size: .7em;
+        border-radius: 3px;
+        border: .5px solid var(--secondary-color);
+    
     }
 
 

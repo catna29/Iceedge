@@ -142,6 +142,7 @@ main{
     box-sizing: border-box; 
    
 }
+
 #cart_item .col1{
     flex: 1 1 70%;
     min-width: 80ch;
@@ -187,7 +188,6 @@ table i{
     display: flex;
     flex-direction: row;
     gap: 15px;
-
 }
 
 .item_color_size .color{
@@ -306,6 +306,7 @@ table i{
   }
 
   /* Button */
+
 .link div{
     display: flex;
     justify-content: center;
@@ -383,21 +384,22 @@ footer .footer_container{
    }
 
    .logo img{
-    width: 80px;
-}
+        width: 70px;
+    }
 
-nav div ul li:first-child{
-    display: none;
-}
+    nav div ul li:first-child{
+        display: none;
+    }
 
-.top_bar ul li a{
-    font-size: .9em;
-    letter-spacing: 1px;
-    padding: 10px 10px;
-    border-radius: 5px;
-    margin: 0em .4em;
-}
-   .hamber_bar{
+    .top_bar ul li a{
+        font-size: .9em;
+        letter-spacing: 1px;
+        padding: 10px 10px;
+        border-radius: 5px;
+        margin: 0em .4em;
+    }
+   
+    .hamber_bar{
        display: inline;
 
    }
@@ -411,8 +413,21 @@ nav div ul li:first-child{
     }
 
     #cart_item .col1{
-        min-width: 65ch;
+        min-width: 40ch;
     }
+
+    .cart_detail .item_color_size{
+        gap: 10px;
+    }
+
+    .payment_options div{
+        border: .5px solid var(--grey--color);
+        padding: .7em .7em;
+        border-radius: 5px;
+        font-size: .9em;
+    }
+
+
 
 
    /*footer*/
@@ -420,7 +435,7 @@ nav div ul li:first-child{
        display: flex;
        flex-direction: row;
        justify-content: space-between;
-       padding: 1em 1em;
+       padding: .5em 1em;
    }
 
    footer img{
